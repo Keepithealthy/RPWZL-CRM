@@ -1,0 +1,20 @@
+.imp-drop { border: 2px dashed var(--line); border-radius: 10px; padding: 28px 16px; text-align: center; background: var(--panel); }
+.imp-drop.over { border-color: var(--primary); background: #eef4fb; }
+.imp-drop input[type=file] { margin-top: 8px; max-width: 100%; }
+.imp-steps { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 12px; padding: 0; list-style: none; }
+.imp-steps li { padding: 3px 12px; border-radius: 999px; background: #eceff4; color: var(--muted); font-size: .85rem; }
+.imp-steps li.on { background: var(--primary); color: #fff; font-weight: 600; }
+.imp-steps li.done { background: var(--ok-bg); color: var(--ok); }
+.imp-phases { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 10px; }
+.imp-phases li { display: grid; gap: 4px; }
+.imp-phases .state { font-size: .85rem; color: var(--muted); }
+.imp-counts td.num, .imp-counts th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.imp-counts tr.total td { font-weight: 700; background: #f7f9fc; }
+.imp-warn label { display: flex; gap: 8px; align-items: flex-start; }
+.imp-lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.imp-lists ul { margin: 4px 0; padding-left: 18px; }
+.imp-kv { display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px; margin: 6px 0; }
+.imp-kv dt { color: var(--muted); } .imp-kv dd { margin: 0; }
+.imp-old { font-size: .85rem; color: var(--muted); margin: 2px 0 0; word-break: break-word; }
+.imp-big { font-size: 1.6rem; font-weight: 700; }
+.imp-detail { margin: 8px 0 12px; } .imp-detail code { display: block; white-space: pre-wrap; word-break: break-word; background: #f3f4f7; border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; margin-bottom: 6px; font-size: .85rem; }

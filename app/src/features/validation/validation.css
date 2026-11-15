@@ -1,0 +1,32 @@
+.val-toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin: 8px 0; }
+.val-help { max-width: 70ch; }
+.val-keys { font-size: .85rem; color: var(--muted); margin: 6px 0; }
+.val-keys kbd, kbd.val-kbd { display: inline-block; min-width: 1.4em; text-align: center; padding: 0 5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; background: #fff; font: inherit; font-size: .85em; color: var(--text); }
+.val-card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
+.val-card.active { border-color: var(--primary); box-shadow: 0 0 0 2px #b9d3ee; }
+.val-card.skipped { opacity: .65; }
+.val-card.decided { background: #f7f9fc; }
+.val-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; justify-content: space-between; cursor: pointer; }
+.val-reasonlist { margin: 4px 0; padding-left: 18px; }
+.val-reasons { margin: 4px 0; padding-left: 18px; color: #7a4b00; font-size: .9rem; }
+.val-accounts { display: grid; gap: 8px; margin: 8px 0; }
+.val-account { border: 1px solid var(--line); border-radius: 6px; overflow-x: auto; }
+.val-account > h4 { margin: 0; padding: 4px 10px; background: #f1f4f9; font-size: .85rem; }
+.val-account table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: .9rem; table-layout: fixed; }
+/* shared column widths, so the tables of Konto 1 and Konto 2 line up (UX-R4-4) */
+.val-account col.vc-name { width: 28%; }
+.val-account col.vc-type { width: 14%; }
+.val-account col.vc-nip { width: 12%; }
+.val-account col.vc-addr { width: 16%; }
+.val-account col.vc-contact { width: 18%; }
+.val-account col.vc-act { width: 12%; }
+.val-account td { overflow-wrap: anywhere; }
+.val-account td, .val-account th { padding: 5px 10px; border-top: 1px solid #eceff4; text-align: left; vertical-align: top; }
+.val-account th { font-size: .75rem; color: var(--muted); font-weight: 600; }
+.val-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; }
+.val-note { font-size: .85rem; color: var(--muted); margin: 4px 0 0; }
+.val-note.val-warn { color: inherit; background: var(--warn-bg); border-left: 3px solid var(--warn-line); padding: 4px 8px; }
+.val-new { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 4px; padding: 0 6px; font-size: .8rem; }
+.val-checklist .field { margin: 6px 0; }
+.val-pick { list-style: none; padding: 0; margin: 6px 0; display: grid; gap: 4px; }
+.val-pick label { display: flex; gap: 8px; align-items: flex-start; }
