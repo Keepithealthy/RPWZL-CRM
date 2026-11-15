@@ -1,0 +1,37 @@
+# dependencies and builds
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+
+# secrets and local config (only *.example files are tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+
+# test artifacts
+app/test-results/
+app/playwright-report/
+app/blob-report/
+app/playwright/.cache/
+coverage/
+
+# real register data must never enter the repo
+*.json.gz
+rpwdl-index-*
+Wpisy_*.json
+*.zip
+crm-kopia-*.json*
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.log
